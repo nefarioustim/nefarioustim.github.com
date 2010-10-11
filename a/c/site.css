@@ -12,6 +12,7 @@ html {
 
 body {
     background: #fff;
+    box-shadow: 0 0 10px #000;
     color: #666;
     font: 14px/1.4 georgia, serif;
     margin: 0 auto;
@@ -55,6 +56,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: #333;
     font: bold 14px/1.3 "Helvetica Neue", arial, sans-serif;
 }
 

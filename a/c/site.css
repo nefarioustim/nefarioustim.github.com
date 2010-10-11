@@ -5,9 +5,8 @@
 
 html {
     background: #06c repeat-x 0 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9cf), to(#06c));
-    background-image: -moz-linear-gradient(top, #9cf, #06c);
-    background-size: 1500px;
+    background-image: -webkit-gradient(linear, 0 0, 0 400, from(#9cf), to(#06c));
+    background-image: -moz-linear-gradient(top, #9cf, #06c 400px);
     text-align: center;
 }
 
@@ -28,6 +27,7 @@ nav {
     background: #ffc;
     border-bottom: 2px solid #fd9;
     color: #f63;
+    display: block;
     font: 12px/1.3 "Helvetica Neue", arial, sans-serif;
     padding: 5px 10px;
     position: relative;
@@ -101,6 +101,7 @@ li {
 }
 
 article {
+    display: block;
     padding: 0 20px;
 }
 

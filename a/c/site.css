@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #06c repeat-x 0 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9cf), to(#06c));
+    background-image: -moz-linear-gradient(top, #9cf, #06c);
+    text-align: center;
+}
+
+body {
+    background: #fff;
+    color: #666;
+    font: 14px/1.4 georgia, serif;
+    margin: 0 auto;
+    text-align: left;
+    width: 500px;
+}
+
+nav {
+    background: #ffc;
+    color: #f63;
+    font: 12px/1.3 "Helvetica Neue", arial, sans-serif;
+    padding: 5px 10px;
+}
+nav a:link,
+nav a:visited {
+    color: #f63;
+}
+
+nav li {
+    display: moz-inline-box;
+    display: inline-block;
+    margin-right: 10px;
+    *display: inline;
+    *zoom: 1;
+}
+
+a:link,
+a:visited {
+    color: #36f;
+    text-decoration: none;
+}
+a:focus,
+a:hover,
+a:active {
+    color: #f63;
+    text-decoration: underline;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: bold 14px/1.3 "Helvetica Neue", arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h2 {
+    background: #06c repeat-x 0 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9cf), to(#06c));
+    background-image: -moz-linear-gradient(top, #9cf, #06c);
+    border: 1px solid #69f;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+h3 {
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+article {
+    padding: 0 20px;
+}
+
+small {
+    color: #999;
+    display: block;
+    font: 9px/1 tahoma, sans-serif;
+    padding: 10px 0;
+    text-align: center;
+}
+
+article ul ul {
+    padding: 0 20px;
+}
+article ul ul li {
+    padding: 5px 0;
+}
+
+h2 a:link,
+h2 a:visited {
+    color: #fff;
+}
+h2 a:focus,
+h2 a:hover,
+h2 a:active {
+    text-decoration: none;
+}
+h2 a span {
+    color: #9cf;
+}

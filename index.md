@@ -3,52 +3,45 @@ title:      "Tim Huegdon's Projects"
 layout:     default
 bodyclass:  index
 ---
-# Tim Huegdon's Projects
+# Projects
 
-<section>
+*   ## <span>&minus;</span> Fit for use
 
-## Fit for use
+    *   ###[Modern Carousel][modern-carousel]
 
-*   [Modern Carousel][modern-carousel]
-
-    A carousel widget for jQuery that makes use of modern CSS to keep panels
-    within the normal flow of the document. This means there are no positional
-    calculations required in the JavaScript, and no float clearing is required
-    in the CSS.
+        A carousel widget for jQuery that makes use of modern CSS to keep
+        panels within the normal flow of the document. This means there are no
+        positional calculations required in the JavaScript, and no float
+        clearing in the CSS.
     
-    This carousel is untested and unsupported in older browsers, including
-    Internet Explorer 6.
+        This carousel is unsupported, and therefore untested, in older
+        browsers, including Internet Explorer 6.
     
-*   [jQuery Accordion][jquery-accordion]
+    *   ###[jQuery Accordion][jquery-accordion]
 
-    A fully customisable accordion widget for jQuery.
+        A fully customisable accordion widget for jQuery.
     
-    Gets around the jumping issues with jQuery's `slideDown` method by not
-    using it. Also fixes known issues with jQuery's opacity filter in IE6 and
-    IE7.
+        Gets around the jumping issues with jQuery's `slideDown` method by not
+        using it. Also fixes known issues with jQuery's opacity filter in IE6
+        and IE7.
 
 [modern-carousel]:  /modern-carousel/
 [jquery-accordion]: /jquery-accordion/
 
-</section>
-<section>
+*   ## <span>+</span> Stuff in alpha
 
-## Stuff in alpha
+    *   ###[jQuery Gallery][jquery-gallery]
 
-*   [jQuery Gallery][jquery-gallery]
+        An experiment in gallery transitions. Totally unoptimised.
 
-    An experiment in gallery transitions. Totally unoptimised.
+    *   ###[Transblogrify][transblogrify]
 
-*   [Transblogrify][transblogrify]
-
-    A static site generator written for node.js.
+        A static site generator written for node.js.
     
-*   [Nefarious Blog][nef-blog]
+    *   ###[Nefarious Blog][nef-blog]
 
-    A basic blog Django application.
+        A basic blog Django application.
 
 [jquery-gallery]:   /jquery-gallery/
 [transblogrify]:    /transblogrify/
 [nef-blog]:         /nef-blog/
-
-</section>

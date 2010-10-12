@@ -160,10 +160,10 @@ table below.
 <table>
     <thead>
         <tr>
-            <th>Parameter</th>
-            <th>Data type</th>
-            <th>Default</th>
-            <th>Explanation</th>
+            <th scope="col">Parameter</th>
+            <th scope="col">Data type</th>
+            <th scope="col">Default</th>
+            <th scope="col">Explanation</th>
         </tr>
     </thead>
     <tbody>
@@ -177,5 +177,104 @@ table below.
                 calculate the distance required to animate during transition.
             </td>
         </tr>
+        <tr>
+            <td><code>panesToMove</code></td>
+            <td>Number</td>
+            <td>1</td>
+            <td>
+                This is the number of panes that will move with each activation
+                of next or previous. This means it is perfectly possible to
+                have 2 panes visible but move only one at a time, should that
+                be what is required.
+            </td>
+        </tr>
+        <tr>
+            <td><code>pagination</code></td>
+            <td>Boolean</td>
+            <td>true</td>
+            <td>
+                This flag will create a pagination <code>ul</code> when set to
+                <code>true</code>. The pagination controls will appear with
+                the standard controls, directly after the <code>.clip</code>
+                element.
+            </td>
+        </tr>
+        <tr>
+            <td><code>speed</code></td>
+            <td>Number</td>
+            <td>200</td>
+            <td>
+                The number of milliseconds the transition animation should
+                last for.
+            </td>
+        </tr>
+        <tr>
+            <td><code>easing</code></td>
+            <td>String</td>
+            <td>"swing"</td>
+            <td>
+                The easing method to use on the transition animation.
+            </td>
+        </tr>
+        <tr>
+            <td><code>loop</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>
+                This flag causes the carousel to loop once the final pane
+                has been reached.
+            </td>
+        </tr>
+        <tr>
+            <td><code>autoplay</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>
+                When set to true, the carousel will automatically start to
+                animate once instantiation is complete.
+            </td>
+        </tr>
+        <tr>
+            <td><code>hovercontrols</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>
+                If active, the controls will only show when the carousel is
+                hovered over.
+            </td>
+        </tr>
+        <tr>
+            <td><code>hoverpause</code></td>
+            <td>Boolean</td>
+            <td>false</td>
+            <td>
+                If active, the carousel will pause playing when the carousel
+                is hovered over.
+            </td>
+        </tr>
+        <tr>
+            <td><code>delay</code></td>
+            <td>Number</td>
+            <td>2000</td>
+            <td>
+                The number of milliseconds to pause on each pane of the
+                carousel when playing.
+            </td>
+        </tr>
+        <tr>
+            <td><code>transition</code></td>
+            <td>Function reference or false</td>
+            <td>false</td>
+            <td>
+                A reference to a transition function defined at
+                <code>$.fn.carousel</code>. E.g. “yourTransitionHere” would
+                reference a function defined at
+                <code>$.fn.carousel.yourTransitionHere</code>.
+            </td>
+        </tr>
     </tbody>
 </table>
+
+## Custom events
+
+## Custom transitions

@@ -157,13 +157,16 @@ table below.
 
 ## Configuration options
 
+The following options may be defined in the configuration object passed to the
+`$(element).carousel()` constructor:
+
 <table>
     <thead>
         <tr>
             <th scope="col">Parameter</th>
             <th scope="col">Data type</th>
             <th scope="col">Default</th>
-            <th scope="col">Explanation</th>
+            <th scope="col">Description</th>
         </tr>
     </thead>
     <tbody>
@@ -276,5 +279,54 @@ table below.
 </table>
 
 ## Custom events
+
+The following namespaced custom events are available for you to bind your own
+methods to:
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">Event name</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>move.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><code>jump.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><code>prev.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><code>next.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><code>play.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><code>pause.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><code>nav-state.carousel</code></td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Custom transitions

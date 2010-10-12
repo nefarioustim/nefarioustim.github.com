@@ -2,6 +2,7 @@ $(document).ready(function docReady(e){
     var acc = $("article>ul").accordion({
         handle: "h2",
         panel: "ul",
+        speed: 400,
         easing: "easeInOutCirc"
     });
     

@@ -4,17 +4,17 @@
 }
 
 html {
-    background: #9cf repeat-x 0 0;
-    background-image: -webkit-gradient(linear, 0 0, 0 450, from(#69f), to(#9cf));
-    background-image: -moz-linear-gradient(top, #69f, #9cf 450px);
+    background: #69f repeat-x 0 0;
+    background-image: -webkit-gradient(linear, 0 0, 0 450, from(#9cf), to(#69f));
+    background-image: -moz-linear-gradient(top, #9cf, #69f 450px);
     text-align: center;
 }
 
 body {
     background: #fff;
-    -moz-box-shadow: 0 0 20px #036;
-    -webkit-box-shadow: 0 0 20px #036;
-    box-shadow: 0 0 20px #036;
+    -moz-box-shadow: 0 0 20px 2px #036;
+    -webkit-box-shadow: 0 0 20px 2px #036;
+    box-shadow: 0 0 20px 2px #036;
     color: #666;
     font: 14px/1.4 georgia, serif;
     margin: 0 auto;

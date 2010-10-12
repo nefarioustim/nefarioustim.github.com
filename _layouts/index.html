@@ -8,16 +8,11 @@
         <link rel="stylesheet" href="/a/c/site.css" type="text/css">
     </head>
     <body{% if page.bodyclass %} class="{{ page.bodyclass }}"{% endif %}>
-        <nav>
-            <ul>
-                <li><a href="/" rel="home">Projects</a></li>
-                <li><a href="http://timhuegdon.com" rel="me">timhuegdon.com</a></li>
-            </ul>
-        </nav>
+        {% include nav.html %}
         <article>
             {{ content }}
         </article>
-        <small>© {{ site.time | date: "%Y" }} <a href="http://timhuegdon.com" rel="me">Tim Huegdon</a> -- May contain traces of nuts</small>
+        {% include foot.html %}
         <script type="text/javascript" src="/a/j/create-html5.js"></script>
         <script type="text/javascript" src="/a/j/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="/a/j/jquery.easing.min.js"></script>

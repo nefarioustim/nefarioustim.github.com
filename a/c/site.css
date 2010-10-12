@@ -4,9 +4,9 @@
 }
 
 html {
-    background: #06c repeat-x 0 0;
-    background-image: -webkit-gradient(linear, 0 0, 0 400, from(#9cf), to(#06c));
-    background-image: -moz-linear-gradient(top, #9cf, #06c 400px);
+    background: #9cf repeat-x 0 0;
+    background-image: -webkit-gradient(linear, 0 0, 0 450, from(#69f), to(#9cf));
+    background-image: -moz-linear-gradient(top, #69f, #9cf 450px);
     text-align: center;
 }
 
@@ -18,7 +18,6 @@ body {
     color: #666;
     font: 14px/1.4 georgia, serif;
     margin: 0 auto;
-    overflow: hidden;
     text-align: left;
     width: 500px;
 }
@@ -30,7 +29,6 @@ nav {
     display: block;
     font: 12px/1.3 "Helvetica Neue", arial, sans-serif;
     padding: 5px 10px;
-    position: relative;
 }
 nav a:link,
 nav a:visited {
@@ -73,6 +71,11 @@ h1 {
 }
 
 h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.index h2 {
     background: #06c repeat-x 0 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#9cf), to(#06c));
     background-image: -moz-linear-gradient(top, #9cf, #06c);

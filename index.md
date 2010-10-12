@@ -1,6 +1,6 @@
 ---
 title:      "Tim Huegdon's Projects"
-layout:     default
+layout:     index
 bodyclass:  index
 ---
 # Projects

@@ -19,31 +19,6 @@
             {{ content }}
         </article>
         <small>© {{ site.time | date: "%Y" }} <a href="http://timhuegdon.com" rel="me">Tim Huegdon</a> -- May contain traces of nuts</small>
-        <script type="text/javascript" src="/a/j/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="/a/j/jquery.accordion.2.0.min.js"></script>
-        <script type="text/javascript">
-            document.createElement('nav');
-            document.createElement('article');
-            $(document).ready(function docReady(e){
-                var acc = $("article>ul").accordion({
-                    handle: "h2",
-                    panel: "ul"
-                });
-                
-                acc.bind("panel-open", function(e){
-                    $(e.target)
-                        .closest("li")
-                        .find("h2 span")
-                        .html("&minus;");
-                });
-
-                acc.bind("panel-close", function(e){
-                    $(e.target)
-                        .closest("li")
-                        .find("h2 span")
-                        .html("+");
-                });
-            });
-        </script>
+        <script type="text/javascript" src="/a/j/create-html5.js"></script>
     </body>
 </html>

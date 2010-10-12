@@ -6,6 +6,24 @@
             {{ page.title }}
         </title>
         <link rel="stylesheet" href="/a/c/site.css" type="text/css">
+        <link rel="stylesheet" href="/a/c/syntax.css" type="text/css">
+        <link rel="stylesheet" href="/a/c/carousel.core.css" type="text/css">
+        <link rel="stylesheet" href="/a/c/carousel.skin.css" type="text/css">
+        <style type="text/css">
+            #example1 {
+                height: 232px;
+                margin: 20px auto;
+                width: 458px;
+            }
+            #example1 .clip {
+                border: 1px solid #ccc;
+                height: 230px;
+                width: 456px;
+            }
+            #example1 .clip>ul>li {
+                padding: 5px 4px;
+            }
+        </style>
     </head>
     <body{% if page.bodyclass %} class="{{ page.bodyclass }}"{% endif %}>
         <nav>
@@ -21,7 +39,7 @@
         <script type="text/javascript" src="/a/j/create-html5.js"></script>
         <script type="text/javascript" src="/a/j/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="/a/j/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="/a/j/jquery.accordion.2.0.min.js"></script>
-        <script type="text/javascript" src="/a/j/index.js"></script>
+        <script type="text/javascript" src="/a/j/jquery.carousel.2.1.min.js"></script>
+        <script type="text/javascript" src="/a/j/carousel.js"></script>
     </body>
 </html>

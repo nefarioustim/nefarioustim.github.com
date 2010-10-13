@@ -12,4 +12,9 @@ $(document).ready(function docReady(e) {
         delay: 2000, // Default: 2000
         transition: false // Default: false
     });
+    
+    $('#example2').carousel({
+        loop: true, // Default: false
+        transition: "fade" // Default: false
+    });
 });

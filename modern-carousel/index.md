@@ -160,7 +160,7 @@ table below.
 The following options may be defined in the configuration object passed to the
 `$(element).carousel()` constructor:
 
-<table>
+<table id="table-config">
     <thead>
         <tr>
             <th scope="col">Parameter</th>
@@ -171,7 +171,7 @@ The following options may be defined in the configuration object passed to the
     </thead>
     <tbody>
         <tr>
-            <td><code>visiblePanes</code></td>
+            <th scope="row"><code>visiblePanes</code></th>
             <td>Number</td>
             <td>1</td>
             <td>
@@ -181,7 +181,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>panesToMove</code></td>
+            <th scope="row"><code>panesToMove</code></th>
             <td>Number</td>
             <td>1</td>
             <td>
@@ -192,7 +192,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>pagination</code></td>
+            <th scope="row"><code>pagination</code></th>
             <td>Boolean</td>
             <td>true</td>
             <td>
@@ -203,7 +203,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>speed</code></td>
+            <th scope="row"><code>speed</code></th>
             <td>Number</td>
             <td>200</td>
             <td>
@@ -212,7 +212,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>easing</code></td>
+            <th scope="row"><code>easing</code></th>
             <td>String</td>
             <td>"swing"</td>
             <td>
@@ -220,7 +220,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>loop</code></td>
+            <th scope="row"><code>loop</code></th>
             <td>Boolean</td>
             <td>false</td>
             <td>
@@ -229,7 +229,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>autoplay</code></td>
+            <th scope="row"><code>autoplay</code></th>
             <td>Boolean</td>
             <td>false</td>
             <td>
@@ -238,7 +238,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>hovercontrols</code></td>
+            <th scope="row"><code>hovercontrols</code></th>
             <td>Boolean</td>
             <td>false</td>
             <td>
@@ -247,7 +247,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>hoverpause</code></td>
+            <th scope="row"><code>hoverpause</code></th>
             <td>Boolean</td>
             <td>false</td>
             <td>
@@ -256,7 +256,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>delay</code></td>
+            <th scope="row"><code>delay</code></th>
             <td>Number</td>
             <td>2000</td>
             <td>
@@ -265,7 +265,7 @@ The following options may be defined in the configuration object passed to the
             </td>
         </tr>
         <tr>
-            <td><code>transition</code></td>
+            <th scope="row"><code>transition</code></th>
             <td>Function reference or false</td>
             <td>false</td>
             <td>
@@ -283,7 +283,7 @@ The following options may be defined in the configuration object passed to the
 The following namespaced custom events are available for you to bind your own
 methods to:
 
-<table>
+<table id="table-events">
     <thead>
         <tr>
             <th scope="col">Event name</th>
@@ -292,41 +292,106 @@ methods to:
     </thead>
     <tbody>
         <tr>
-            <td><code>move.carousel</code></td>
+            <th scope="row"><code>play.carousel</code></th>
             <td>
+                This event is triggered when the carousel is set to play. This
+                includes the use of the <code>autoplay</code> configuration option.
             </td>
         </tr>
         <tr>
-            <td><code>jump.carousel</code></td>
+            <th scope="row"><code>pause.carousel</code></th>
             <td>
+                This event is triggered when the carousel is paused. It is
+                also triggered if the <code>hoverpause</code> configuration option is
+                set to <code>true</code>, and the carousel is hovered over.
             </td>
         </tr>
         <tr>
-            <td><code>prev.carousel</code></td>
+            <th scope="row"><code>prev.carousel</code></th>
             <td>
+                This event is triggered when the "previous" control is
+                activated. <strong>Note</strong>: This event also triggers the
+                <code>pause.carousel</code> event.
             </td>
         </tr>
         <tr>
-            <td><code>next.carousel</code></td>
+            <th scope="row"><code>next.carousel</code></th>
             <td>
+                This event is triggered when the "next" control is
+                activated. <strong>Note</strong>: This event also triggers the
+                <code>pause.carousel</code> event.
             </td>
         </tr>
         <tr>
-            <td><code>play.carousel</code></td>
+            <th scope="row"><code>move.carousel</code></th>
             <td>
+                This event is triggered when the carousel pane is moved by a
+                given number of panes, and is used by several other events.
+                Also triggered by <code>play.carousel</code>, <code>prev.carousel</code>, and
+                <code>next.carousel</code>. The event callback can accept a
+                single parameter; a signed-integer denoting the number of
+                panes to move by.
             </td>
         </tr>
         <tr>
-            <td><code>pause.carousel</code></td>
+            <th scope="row"><code>jump.carousel</code></th>
             <td>
+                This event is triggered when moving the carousel to a specific
+                pane. It is subsequently fired by <code>move.carousel</code>.
+                The callback accepts two parameters: an unsigned integer
+                representing the pane to jump to, and another unsigned integer
+                representing the current pane.
             </td>
         </tr>
         <tr>
-            <td><code>nav-state.carousel</code></td>
+            <th scope="row"><code>nav-state.carousel</code></th>
             <td>
+                This event is triggered when the carousel checks the current
+                navigation state to activate/deactivate the relevant controls.
+                It is triggered once the carousel initialisation is complete,
+                and after each animation between panes.
             </td>
         </tr>
     </tbody>
 </table>
 
 ## Custom transitions
+
+The carousel widget includes a basic framework to allow you to create your own
+custom transitions between panes. Further to this, the script also includes
+a built in transition entitled `fade`.
+
+### Demo
+
+<div class="carousel skin" id="example2">
+    <div class="clip">
+        <ul>
+            <li><img src="/a/i/family.png" alt="Family" width="220" height="220"></li>
+            <li><img src="/a/i/luxury.png" alt="Luxury" width="220" height="220"></li>
+            <li><img src="/a/i/romantic.png" alt="Romantic" width="220" height="220"></li>
+            <li><img src="/a/i/spa.png" alt="Spa" width="220" height="220"></li>
+        </ul>
+    </div>
+</div>
+
+When a custom transition is specified in the carousel configuration, the
+script will look for a corresponding function in the following namespace:
+
+{% highlight javascript %}
+$.fn.carousel.{function name}
+{% endhighlight %}
+
+So, in the example of the `fade` transition, it is defined as:
+
+{% highlight javascript %}
+$.fn.carousel.fade = function(config) {
+    // Transition code here
+}
+{% endhighlight %}
+
+"carousel":     carousel,
+"defaults":     defaults,
+"delta":        delta,
+"last":         lastPane,
+"current":      currentPane,
+"anim":         animParams

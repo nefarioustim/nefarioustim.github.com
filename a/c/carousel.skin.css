@@ -25,10 +25,6 @@
         padding:    4px 8px;
         zoom: 1;
     }
-    .skin .controls .prev,
-    .skin .controls .next {
-        display: block;
-    }
     .skin .controls button {
         background:     url(../i/controls.png) no-repeat 0 0;
         border:         0;

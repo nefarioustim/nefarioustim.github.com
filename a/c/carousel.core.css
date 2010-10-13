@@ -1,5 +1,6 @@
 .carousel {
     position:   relative;
+    zoom: 1;
 }
     .carousel ul,
     .carousel li {

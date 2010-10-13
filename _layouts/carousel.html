@@ -5,6 +5,9 @@
         <title>
             {{ page.title }}
         </title>
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
         <link rel="stylesheet" href="/a/c/site.css" type="text/css">
         <link rel="stylesheet" href="/a/c/syntax.css" type="text/css">
         <link rel="stylesheet" href="/a/c/carousel.core.css" type="text/css">
@@ -17,7 +20,6 @@
             {{ content }}
         </article>
         {% include foot.html %}
-        <script type="text/javascript" src="/a/j/create-html5.js"></script>
         <script type="text/javascript" src="/a/j/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="/a/j/jquery.easing.min.js"></script>
         <script type="text/javascript" src="/a/j/jquery.carousel.2.1.min.js"></script>

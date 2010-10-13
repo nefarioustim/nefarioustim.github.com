@@ -3,8 +3,8 @@ $(document).ready(function docReady(e) {
         visiblePanes: 2, // Default: 1
         panesToMove: 2, // Default: 1
         pagination: true, // Default: true
-        speed: 1000, // Default: 200
-        easing: "easeInOutElastic", // Default: "swing"
+        speed: 600, // Default: 200
+        easing: "easeOutElastic", // Default: "swing"
         loop: true, // Default: false
         autoplay: false, // Default: false
         hovercontrols: true, // Default: false

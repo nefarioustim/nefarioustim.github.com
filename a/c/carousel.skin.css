@@ -43,23 +43,19 @@
         .skin .controls .pause button {
             background-position:    -16px 0;
         }
-        .skin .controls .prev {
-            position:   absolute;
-            top:        100px;
+        .skin .controls .prev button {
+            background-position: -32px 0;
+            position: absolute;
+            top: 100px;
             z-index: 100;
         }
-            .skin .controls .prev button {
-                background-position:    -32px 0;
-            }
-        .skin .controls .next {
-            position:   absolute;
-            right:      0;
-            top:        100px;
+        .skin .controls .next button {
+            background-position:    -48px 0;
+            position: absolute;
+            right: 0;
+            top: 100px;
             z-index: 100;
         }
-            .skin .controls .next button {
-                background-position:    -48px 0;
-            }
         .skin .controls .pages button {
             background-position:    -32px -16px;
         }

@@ -46,15 +46,18 @@
         .skin .controls .prev button {
             background-position: -32px 0;
             position: absolute;
+            left: 8px;
             top: 100px;
             z-index: 100;
+            zoom: 1;
         }
         .skin .controls .next button {
-            background-position:    -48px 0;
+            background-position: -48px 0;
             position: absolute;
-            right: 0;
+            right: 8px;
             top: 100px;
             z-index: 100;
+            zoom: 1;
         }
         .skin .controls .pages button {
             background-position:    -32px -16px;

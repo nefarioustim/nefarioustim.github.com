@@ -126,6 +126,7 @@ thead th {
     -moz-border-radius-topright: 8px;
     -webkit-border-top-right-radius: 8px;
     border-top-right-radius: 8px;
+    color: #fff;
     font-size: 24px;
     margin: 10px 0;
     padding: 5px 10px;
@@ -174,16 +175,16 @@ ul {
     padding: 5px 0;
 }
 
-h2 a:link,
-h2 a:visited {
+.index h2 a:link,
+.index h2 a:visited {
     color: #fff;
 }
-h2 a:focus,
-h2 a:hover,
-h2 a:active {
+.index h2 a:focus,
+.index h2 a:hover,
+.index h2 a:active {
     text-decoration: none;
 }
-h2 a span {
+.index h2 a span {
     color: #9cf;
 }
 

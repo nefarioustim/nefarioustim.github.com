@@ -1,5 +1,5 @@
 ---
-title:      "Modern Carousel -- Tim Huegdon's Projects"
+title:      "Modern Carousel - Tim Huegdon's Projects"
 layout:     carousel
 bodyclass:  project
 ---
@@ -169,11 +169,11 @@ The following options may be defined in the configuration object passed to the
             <th scope="col">Description</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="highlight">
         <tr>
             <th scope="row"><code>visiblePanes</code></th>
             <td>Number</td>
-            <td>1</td>
+            <td class="m">1</td>
             <td>
                 This is the number of panes visible in your styled carousel.
                 Used in conjunction with the width of the `.clip` element to
@@ -183,7 +183,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>panesToMove</code></th>
             <td>Number</td>
-            <td>1</td>
+            <td class="m">1</td>
             <td>
                 This is the number of panes that will move with each activation
                 of next or previous. This means it is perfectly possible to
@@ -194,7 +194,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>pagination</code></th>
             <td>Boolean</td>
-            <td>true</td>
+            <td class="s kc">true</td>
             <td>
                 This flag will create a pagination <code>ul</code> when set to
                 <code>true</code>. The pagination controls will appear with
@@ -205,7 +205,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>speed</code></th>
             <td>Number</td>
-            <td>200</td>
+            <td class="m">200</td>
             <td>
                 The number of milliseconds the transition animation should
                 last for.
@@ -214,7 +214,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>easing</code></th>
             <td>String</td>
-            <td>"swing"</td>
+            <td class="s">"swing"</td>
             <td>
                 The easing method to use on the transition animation.
             </td>
@@ -222,7 +222,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>loop</code></th>
             <td>Boolean</td>
-            <td>false</td>
+            <td class="s kc">false</td>
             <td>
                 This flag causes the carousel to loop once the final pane
                 has been reached.
@@ -231,7 +231,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>autoplay</code></th>
             <td>Boolean</td>
-            <td>false</td>
+            <td class="s kc">false</td>
             <td>
                 When set to true, the carousel will automatically start to
                 animate once instantiation is complete.
@@ -240,7 +240,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>hovercontrols</code></th>
             <td>Boolean</td>
-            <td>false</td>
+            <td class="s kc">false</td>
             <td>
                 If active, the controls will only show when the carousel is
                 hovered over.
@@ -249,7 +249,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>hoverpause</code></th>
             <td>Boolean</td>
-            <td>false</td>
+            <td class="s kc">false</td>
             <td>
                 If active, the carousel will pause playing when the carousel
                 is hovered over.
@@ -258,7 +258,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>delay</code></th>
             <td>Number</td>
-            <td>2000</td>
+            <td class="m">2000</td>
             <td>
                 The number of milliseconds to pause on each pane of the
                 carousel when playing.
@@ -267,7 +267,7 @@ The following options may be defined in the configuration object passed to the
         <tr>
             <th scope="row"><code>transition</code></th>
             <td>Function reference or false</td>
-            <td>false</td>
+            <td class="s kc">false</td>
             <td>
                 A reference to a transition function defined at
                 <code>$.fn.carousel</code>. E.g. “yourTransitionHere” would
@@ -280,8 +280,8 @@ The following options may be defined in the configuration object passed to the
 
 ## Custom events
 
-The following namespaced custom events are available for you to bind your own
-methods to:
+The following [namespaced jQuery custom events](http://docs.jquery.com/Namespaced_Events)
+are available for you to bind your own methods to:
 
 <table id="table-events">
     <thead>
@@ -389,9 +389,62 @@ $.fn.carousel.fade = function(config) {
 }
 {% endhighlight %}
 
-"carousel":     carousel,
-"defaults":     defaults,
-"delta":        delta,
-"last":         lastPane,
-"current":      currentPane,
-"anim":         animParams
+### Transition configuration argument
+
+Each custom transition method should expect a configuration object containing
+the following parameters:
+
+<table id="table-transition-config">
+    <thead>
+        <tr>
+            <th scope="col">Parameter</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"><code>carousel</code></th>
+            <td>
+                A reference to the parent carousel jQuery object.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>defaults</code></th>
+            <td>
+                A reference to the <code>defaults</code> member of the parent
+                carousel jQuery object. This object will contain each of the
+                variables defined in the configuration options table above.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>delta</code></th>
+            <td>
+                The calculated delta between panels.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>last</code></th>
+            <td>
+                A number representing the pane the transition is to move away
+                from. The first pane in the carousel would be represented as 0.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>current</code></th>
+            <td>
+                A number representing the pane the transition is moving to.
+                Once again, the first pane in the carousel would be
+                represented as 0.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>anim</code></th>
+            <td>
+                An object of standard animation configuration options to be
+                used by animations between panels. This includes the
+                <code>speed</code> and <code>easing</code> options set in the
+                carousel configuration.
+            </td>
+        </tr>
+    </tbody>
+</table>

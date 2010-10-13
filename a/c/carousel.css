@@ -1,0 +1,24 @@
+.carousel {
+    margin: 20px auto;
+    width: 220px;
+}
+.carousel img {
+    display: block;
+}
+.carousel .clip {
+    height: 220px;
+    width: 220px;
+}
+
+#example1 {
+    height: 232px;
+    width: 458px;
+}
+#example1 .clip {
+    border: 1px solid #ccc;
+    height: 230px;
+    width: 456px;
+}
+#example1 .clip>ul>li {
+    padding: 5px 4px;
+}

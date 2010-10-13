@@ -4,9 +4,10 @@
 }
 
 html {
-    background: #69d repeat-x 0 0;
+    /*background: #69d repeat-x 0 0;
     background-image: -webkit-gradient(linear, 0 0, 0 450, from(#9cf), to(#69d));
-    background-image: -moz-linear-gradient(top, #9cf, #69d 450px);
+    background-image: -moz-linear-gradient(top, #9cf, #69d 450px);*/
+    background: #69d url(../i/back.gif) repeat 50% -28px;
     text-align: center;
 }
 
@@ -175,6 +176,9 @@ ul {
     padding: 5px 0;
 }
 
+.index h2 a {
+    display: block;
+}
 .index h2 a:link,
 .index h2 a:visited {
     color: #fff;

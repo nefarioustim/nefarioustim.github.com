@@ -23,6 +23,7 @@
         display:    inline-block;
         *display:   inline;
         padding:    4px 8px;
+        zoom: 1;
     }
     .skin .controls button {
         background:     url(../i/controls.png) no-repeat 0 0;

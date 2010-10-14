@@ -47,7 +47,7 @@ Features include:
 
 You can find the source, including demos, on GitHub at:
 
-(http://github.com/nefarioustim/modern-carousel/)
+[](http://github.com/nefarioustim/modern-carousel/)
 
 ## Basic implementation
 

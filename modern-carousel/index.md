@@ -43,6 +43,12 @@ Features include:
  *  A multitude of **namespaced custom events** that allow you to bind your
     own behaviour.
 
+## Source
+
+You can find the source, including demos, on GitHub at:
+
+[http://github.com/nefarioustim/modern-carousel/]
+
 ## Basic implementation
 
 To implement a carousel like the example above, you'll need to do the follow:

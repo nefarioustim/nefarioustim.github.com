@@ -261,5 +261,83 @@ The following options may be defined in the configuration object passed to the
                 animations.
             </td>
         </tr>
+        <tr>
+            <th scope="row"><code>canOpenMultiple</code></th>
+            <td>Boolean</td>
+            <td class="s kc">false</td>
+            <td>
+                This flag allows the opening of multiple tabs at one time.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>canToggle</code></th>
+            <td>Boolean</td>
+            <td class="s kc">false</td>
+            <td>
+                This flag allows the user to toggle a panel open and closed.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>activeClassPanel</code></th>
+            <td>String</td>
+            <td class="s">"open"</td>
+            <td>
+                This class is applied to an open panel.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>activeClassLi</code></th>
+            <td>String</td>
+            <td class="s">"active"</td>
+            <td>
+                This class is applied to the <code>li</code> of an open panel.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>lockedClass</code></th>
+            <td>String</td>
+            <td class="s">"locked"</td>
+            <td>
+                This class should be applied to any panels to be locked open.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>loadingClass</code></th>
+            <td>String</td>
+            <td class="s">"loading"</td>
+            <td>
+                This class can be applied to any items you wish to apply
+                styling to whilst the accordion is rendering. Primarily, it
+                should be used to circumvent a flash of unstyled content.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+## Custom events
+
+The following [namespaced jQuery custom events](http://docs.jquery.com/Namespaced_Events)
+are available for you to bind your own methods to:
+
+<table id="table-events">
+    <thead>
+        <tr>
+            <th scope="col">Event name</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"><code>panel-open.accordion</code></th>
+            <td>
+                This event fires when a panel of the accordion is opened.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>panel-close.accordion</code></th>
+            <td>
+                This event fires when a panel of the accordion is closed.
+            </td>
+        </tr>
     </tbody>
 </table>

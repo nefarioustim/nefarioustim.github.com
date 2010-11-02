@@ -26,7 +26,7 @@ bodyclass:  index
         and IE7.
 
 [modern-carousel]:  /modern-carousel/
-[jquery-accordion]: http://github.com/nefarioustim/jquery-accordion/
+[jquery-accordion]: /jquery-accordion/
 
 *   ## <span>+</span> Stuff in alpha
 

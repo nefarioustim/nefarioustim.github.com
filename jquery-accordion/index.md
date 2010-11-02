@@ -185,4 +185,81 @@ The example above used the following simple CSS:
 ### Configure and instantiate the accordion
 
 The final step is to create a configuration object and pass it to the
-plug-in added `.accordion()` method of any jQuery object.
+newly added `.accordion()` method of any jQuery object.
+
+For the demo above, I have included all the available configuration options.
+In a real-world implementation, you could skip any values where you wish to
+use the default:
+
+{% highlight javascript %}
+$('#example1').accordion({
+    handle: ".handle", // Default: "h3"
+    panel: ".panel", // Default: ".panel"
+    speed: 500, // Default: 200
+    easing: "easeInOutQuad", // Default "swing"
+    canOpenMultiple: false, // Default: false
+    canToggle: false, // Default: false
+    activeClassPanel: "open", // Default: "open"
+    activeClassLi: "active", // Default: "active"
+    lockedClass: "locked", // Default: "locked"
+    loadingClass: "loading" // Default: "loading"
+});
+{% endhighlight %}
+
+Here's a more in depth look at those options:
+
+## Configuration options
+
+The following options may be defined in the configuration object passed to the
+`$(element).accordion()` constructor:
+
+<table id="table-config">
+    <thead>
+        <tr>
+            <th scope="col">Parameter</th>
+            <th scope="col">Data type</th>
+            <th scope="col">Default</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="highlight">
+        <tr>
+            <th scope="row"><code>handle</code></th>
+            <td>String</td>
+            <td class="s">"h3"</td>
+            <td>
+                The handle is the element that will contain a link for
+                triggering the opening and closing of panels in the accordion.
+                This string is a jQuery selector.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>panel</code></th>
+            <td>String</td>
+            <td class="s">".pane"</td>
+            <td>
+                The jQuery selector that will find the panels of your
+                accordion. These will be tied to a handle that exists in the
+                same <code>li</code>.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>speed</code></th>
+            <td>Number</td>
+            <td class="m">200</td>
+            <td>
+                The number of milliseconds the opening and closing animations
+                should last for.
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><code>easing</code></th>
+            <td>String</td>
+            <td class="s">"swing"</td>
+            <td>
+                The easing method to use on the opening and closing
+                animations.
+            </td>
+        </tr>
+    </tbody>
+</table>

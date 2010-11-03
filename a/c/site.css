@@ -51,6 +51,9 @@ nav li {
     *display: inline;
     *zoom: 1;
 }
+nav li.elsewhere {
+    text-align: right;
+}
 
 a:link,
 a:visited {

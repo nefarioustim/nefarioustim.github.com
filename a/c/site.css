@@ -52,7 +52,7 @@ nav li {
     *zoom: 1;
 }
 nav li.elsewhere {
-    text-align: right;
+    float: right;
 }
 
 a:link,
